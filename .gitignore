@@ -23,3 +23,8 @@ _source/images/projects/09_AD_bigmoney/Comp 1.gif
 # 미사용 소스 폴더
 _source/images/메타+인스타/
 _source/images/projects/13*/
+_source/images/projects/00_Format/
+
+# 미사용 소스 파일
+_source/images/projects/*/_souce/
+_source/images/projects/*/Gemini_*

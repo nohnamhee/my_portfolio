@@ -1,0 +1,2753 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noh Namhee — Brand Contents Designer</title>
+  <meta name="description" content="Prioritizing brand growth through design. 브랜드의 성장을 디자인의 최우선 가치로 두는 디자이너 노남희">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    if (window.location.hash.startsWith('#work-detail')) {
+      const hashId = window.location.hash.replace('#work-detail-', '');
+      const targetId = (hashId && hashId !== '#work-detail') ? hashId : 'projectDetailOverlay_02';
+      document.write('<style id="directLoadStyle">body{overflow:hidden !important;} .about-view-wrapper, .work-view-wrapper { display: none !important; } #' + targetId + '{opacity:1 !important; transform:translateY(0) !important; pointer-events:auto !important; transition:none !important; display: flex !important;} @keyframes fadeUpOnLoad { 0% { opacity: 0; transform: translateY(40px); } 100% { opacity: 1; transform: translateY(0); } } .project-detail-container { animation: fadeUpOnLoad 0.8s ease-out forwards; }</style>');
+    }
+  </script>
+</head>
+
+<body>
+  <!-- 01. HERO -->
+  <section class="hero" id="hero">
+
+    <div class="hero-name-container hero-grid-layout">
+      <div class="word-clipper word-clipper-noh">
+        <div class="rolling-down">
+          <span>Noh</span>
+          <span>Noh</span>
+          <span>Noh</span>
+          <span>Noh</span>
+        </div>
+      </div>
+      <div class="word-clipper word-clipper-namhee">
+        <div class="rolling-up">
+          <span>Namhee</span>
+          <span>Namhee</span>
+          <span>Namhee</span>
+          <span>Namhee</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-info-row hero-grid-layout" id="infoRow">
+      <div class="info-left nav-links">
+        <a href="#about" class="nav-link active" onclick="closeWorkGallery(event)">About</a>
+        <a href="#" class="nav-link" onclick="openWorkGallery(event)">Work</a>
+      </div>
+      <div class="info-center">
+        <a href="#contact">Contact &darr;</a>
+      </div>
+      <div class="info-right">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">White</button>
+      </div>
+    </div>
+
+    <!-- About View Content -->
+    <div class="about-view-wrapper" style="transition: opacity 0.5s ease; opacity: 1;">
+      <div class="hero-bottom hero-grid-layout">
+        <div class="hero-body">
+          <p>안녕하세요.<br>주변 동료들과 긍정적으로 소통하며,<span class="mobile-br"></span> 매 순간 즐겁게 일하고<br>의미 있는 결과와 브랜드의 성장을<span class="mobile-br"></span> 만들기 위해 노력하는<br>콘텐츠 디자이너 노남희입니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work View Content (Expands below header) -->
+    <div class="work-view-wrapper" style="display: none; opacity: 0; transition: opacity 0.5s ease; width: 100%;">
+
+      <div class="gallery-filter-tabs">
+        <button class="gallery-filter-btn active" data-filter="all">All</button>
+        <button class="gallery-filter-btn" data-filter="web-promo">Web & Promotion</button>
+        <button class="gallery-filter-btn" data-filter="content-bx">Contents · BX</button>
+      </div>
+
+      <div class="work-gallery-grid-3x4" style="margin: 40px -30px 0 -30px;">
+        <div class="gallery-item shape-square" data-category="content-bx" style="animation-delay: 0.05s;"
+          onclick="openProjectDetail('projectDetailOverlay_12')">
+          <img src="_source/images/projects/11_TZM_Pakage_renewal/Hero_Image/Hero_Image.jpg" alt="TZM Package">
+          <div class="gallery-caption">TZM: Package Application System<span class="year">2025</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="web-promo" style="animation-delay: 0.08s;"
+          onclick="openProjectDetail('projectDetailOverlay_10')">
+          <img src="_source/images/projects/07_Chuseok/Gallery_Thumbnail/Artboard 1.png" alt="Chuseok Promotion">
+          <div class="gallery-caption">Chuseok Promotion<span class="year">2025</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="web-promo" style="animation-delay: 0.1s;"
+          onclick="openProjectDetail('projectDetailOverlay_09')">
+          <img src="_source/images/projects/06_Famliyday/Gallery_Thumbnail/Gallery_Thumbnail.jpg" alt="TZM Family Day">
+          <div class="gallery-caption">TZM Family Day<span class="year">2025</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="web-promo" style="animation-delay: 0.12s;"
+          onclick="openProjectDetail('projectDetailOverlay_08')">
+          <img src="_source/images/projects/05_11th_thezamday/Gallery_Thumbnail/Gallery_Thumbnail.jpg" alt="11th THEZAM DAY">
+          <div class="gallery-caption">11th THEZAM DAY<span class="year">2023</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="web-promo" style="animation-delay: 0.14s;"
+          onclick="openProjectDetail('projectDetailOverlay_06')">
+          <img src="_source/images/projects/04_mom/Gallery_Thumbnail/Gallery_Thumbnail.png" alt="Mother & Daughter Campaign">
+          <div class="gallery-caption">Mother & Daughter Campaign<span class="year">2021</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="content-bx" style="animation-delay: 0.12s;"
+          onclick="openProjectDetail('projectDetailOverlay_11')">
+          <img src="_source/images/projects/12_womanarchive/Gemini_Generated_Image_ro2c16ro2c16ro2c.png" alt="Women Archive">
+          <div class="gallery-caption">Women Archive<span class="year">2022</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="content-bx" style="animation-delay: 0.12s;"
+          onclick="openProjectDetail('projectDetailOverlay_05')">
+          <img src="_source/images/projects/09_AD_bigmoney/Gallery_Thumbnail.jpg" alt="META AD CONTENTS">
+          <div class="gallery-caption">META AD CONTENTS<span class="year">2026 - 2017</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="content-bx" style="animation-delay: 0.2s;"
+          onclick="openProjectDetail('projectDetailOverlay_03')">
+          <img src="_source/images/projects/08_insta_mood/images/con_10.jpg" alt="Project 3">
+          <div class="gallery-caption">Product visual & AD Contents<span class="year">2026 - 2020</span></div>
+        </div>
+        <div class="gallery-item shape-vert" data-category="web-promo" style="animation-delay: 0.3s;"
+          onclick="openProjectDetail('projectDetailOverlay_01')">
+          <img src="_source/images/projects/01_Rolly/Gallery_Thumbnail/thumb_02.jpg" alt="Project 1">
+          <div class="gallery-caption">Rolly<span class="year">2026</span></div>
+        </div>
+        <div class="gallery-item shape-horiz" data-category="web-promo" style="animation-delay: 0.4s;"
+          onclick="openProjectDetail('projectDetailOverlay_02')">
+          <img src="_source/images/projects/02_BlackFriday/_project souce/mo_cg_BF.jpg" alt="Project 2">
+          <div class="gallery-caption">Black Friday<span class="year">2026</span></div>
+        </div>
+        <div class="gallery-item shape-square" data-category="content-bx" style="animation-delay: 0.5s;"
+          onclick="openProjectDetail('projectDetailOverlay_04')">
+          <img src="_source/images/projects/10_vedio/01_thumb.png" alt="Short-form Video Contents">
+          <div class="gallery-caption">Short-form Video Contents<span class="year">2025</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="about-view-wrapper" style="transition: opacity 0.5s ease; opacity: 1;">
+
+    <!-- 02. ABOUT ME -->
+    <!-- 02. ABOUT ME -->
+    <div id="about" class="section about-section">
+      <div class="about-layout hero-grid-layout">
+        <div class="about-left">
+          <h2 class="section-label fade-in">Core Values</h2>
+        </div>
+        <div class="about-right">
+
+          <div class="about-item fade-in">
+            <div class="about-item-header">
+              <span class="about-keyword">Persistence</span>
+            </div>
+            <div class="about-item-content">
+              <p class="about-quote">브랜드가 좋은 성과를 내도록 돕는 것.</p>
+              <div class="about-desc-wrapper">
+                <p class="about-desc">자사몰 프로모션 진행 당시, 2일 차 매출이 저조했을 때 기획자분과 함께 원인을 치열하게 고민 끝에 메인 아트웍의 주목도와 메시지가 약하다고 판단해
+                  즉시 전면 리디자인하여 교체하여 일 매출 회복과 최종 매출 목표를 달성했습니다.<br><br>단순히 디자인을 '완성'시키는 것이 아닌 데이터가 개선될 때까지, 디자인의 심미성도
+                  중요하지만 협업자와 함께 고민하며 정량적인 성과를 높이는 것이 디자이너의 역할이라 생각합니다.</p>
+              </div>
+              <button class="view-more-btn" onclick="toggleAbout(this)">View more</button>
+            </div>
+          </div>
+
+          <div class="about-item fade-in">
+            <div class="about-item-header">
+              <span class="about-keyword">Execution</span>
+            </div>
+            <div class="about-item-content">
+              <p class="about-quote">생각에서 그치지 않고,<span class="mobile-br"></span> 직접 움직여 결과물로 보여줍니다.</p>
+              <div class="about-desc-wrapper">
+                <p class="about-desc">트렌드를 분석에 그치지 않고 비지니스 성과로 연결하는 방법을 고민하며 일합니다. 메타 광고 트렌드를 분석해 직접 제작한 소재를 마케팅팀에 역으로
+                  제안, 실제 전환 성과가 좋아 이를 템플릿으로 시스템화하여 제작 공수를 줄였습니다.<br><br>신제품 홍보를 위한 숏폼 콘텐츠 기획 및 촬영 그리고 편집까지. 아이디어만 던지는 것에
+                  머무르지 않고, 실제 결과물로 구현해 낼 수 있도록 함께 해나가는 태도로 일합니다.</p>
+              </div>
+              <button class="view-more-btn" onclick="toggleAbout(this)">View more</button>
+            </div>
+          </div>
+
+          <div class="about-item fade-in">
+            <div class="about-item-header">
+              <span class="about-keyword">Communication</span>
+            </div>
+            <div class="about-item-content">
+              <p class="about-quote">같이 하는 일의 가치를 압니다.</p>
+              <div class="about-desc-wrapper">
+                <p class="about-desc">수년간 실무를 하면서 디자인은 혼자만의 예술이 아니라, 여러 동료들과 합을 맞춰가는 과정임을 배웠습니다. 작업을 시작하기 전 기획자의 의도를 충분히
+                  듣고 파악합니다. 가끔 일정이나 기술적인 한계로 구현이 어려운 요청을 받을 때도 있지만, 단순히 "안 돼요"라고 거절하기보단 "이 방향은 어떨까요?"라며 현실적인 대안을 제안하려고
+                  노력합니다. 서로를 존중하며 긍정적으로 소통할 때, 결과물의 완성도도 훨씬 높아진다고 믿습니다.</p>
+              </div>
+              <button class="view-more-btn" onclick="toggleAbout(this)">View more</button>
+            </div>
+          </div>
+
+          <div class="about-item fade-in">
+            <div class="about-item-header">
+              <span class="about-keyword">Scalability</span>
+            </div>
+            <div class="about-item-content">
+              <p class="about-quote">업무 환경을 고민합니다.</p>
+              <div class="about-desc-wrapper">
+                <p class="about-desc">똑같이 반복되는 모델컷 보정 작업을 가이드로 만들고, 파일 관리를 위해 NAS 시스템을 도입하거나 자주 쓰는 포맷을 템플릿화하는 편입니다. 이렇게
+                  단순 작업 시간을 줄이면 프로젝트 속도가 빨라질 뿐만 아니라, 최종 결과물의 비주얼에 더 많은 시간과 정성을 쏟을 수 있는 여유가 생기기 때문입니다.<br><br>결국 더 좋은
+                  디자인을 보여주고 싶다 보니, 일하는 과정 자체를 어떻게 더 효율적으로 바꿀지 자연스럽게 고민하며 움직이게 됩니다.</p>
+              </div>
+              <button class="view-more-btn" onclick="toggleAbout(this)">View more</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Work section moved to tabs -->
+
+    <!-- 04. SKILLS & CAREER -->
+    <div class="section" id="skills">
+      <div class="about-layout hero-grid-layout">
+
+        <div class="about-left fade-in">
+          <h2 class="section-label" style="margin-bottom: 32px; white-space: nowrap;">Skills & Career</h2>
+          <div class="about-item" style="border: none; padding: 0; padding-right: 10%;">
+            <div class="about-item-header">
+              <span class="about-keyword">Tools</span>
+            </div>
+            <div class="about-item-content">
+              <div class="skills-grid">
+                <div class="skill-chip">
+                  <div class="skill-icon">Ps</div>
+                  <div class="skill-meta">
+                    <p class="skill-name">Adobe Photoshop</p>
+                    <div class="skill-bar-bg">
+                      <div class="skill-bar-fill" data-width="90%" style="width:0%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon">Ai</div>
+                  <div class="skill-meta">
+                    <p class="skill-name">Adobe Illustrator</p>
+                    <div class="skill-bar-bg">
+                      <div class="skill-bar-fill" data-width="80%" style="width:0%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon">Pr</div>
+                  <div class="skill-meta">
+                    <p class="skill-name">Procreate</p>
+                    <div class="skill-bar-bg">
+                      <div class="skill-bar-fill" data-width="90%" style="width:0%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon">Ca</div>
+                  <div class="skill-meta">
+                    <p class="skill-name">Calligraphy</p>
+                    <div class="skill-bar-bg">
+                      <div class="skill-bar-fill" data-width="80%" style="width:0%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon">Fi</div>
+                  <div class="skill-meta">
+                    <p class="skill-name">Figma</p>
+                    <div class="skill-bar-bg">
+                      <div class="skill-bar-fill" data-width="60%" style="width:0%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon">Vi</div>
+                  <div class="skill-meta">
+                    <p class="skill-name">Video Edit Tools</p>
+                    <div class="skill-bar-bg">
+                      <div class="skill-bar-fill" data-width="60%" style="width:0%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-chip">
+                  <div class="skill-icon">&lt;/&gt;</div>
+                  <div class="skill-meta">
+                    <p class="skill-name">HTML/CSS</p>
+                    <div class="skill-bar-bg">
+                      <div class="skill-bar-fill" data-width="40%" style="width:0%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right fade-in">
+          <!-- Invisible spacer so Career aligns with Tools perfectly -->
+          <h2 class="section-label"
+            style="visibility: hidden; pointer-events: none; margin: 0; margin-bottom: 32px; font-size: 1.5rem; text-transform: none; letter-spacing: 0; white-space: nowrap;">
+            Skills & Career</h2>
+          <div class="about-item" style="border-top: none; padding-top: 0;">
+            <div class="about-item-header">
+              <span class="about-keyword">Career</span>
+            </div>
+            <div class="about-item-content">
+              <div class="timeline-item"><span class="timeline-year">2017 – 2025</span><span
+                  class="timeline-text">(주)원테이커 브랜드 디자인 매니저</span></div>
+              <div class="timeline-item"><span class="timeline-year">2015 – 2017</span><span class="timeline-text">좋은일
+                  연구소 프렌차이즈 디자인 주임</span></div>
+              <div class="timeline-item"><span class="timeline-year">2011 – 2015</span><span class="timeline-text">인제대학교
+                  시각디자인 전공 졸업</span></div>
+            </div>
+          </div>
+
+          <div class="about-item" style="border-bottom: 1px solid var(--border);">
+            <div class="about-item-header">
+              <span class="about-keyword">Activities</span>
+            </div>
+            <div class="about-item-content">
+              <div class="timeline-item"><span class="timeline-year">2014</span><span class="timeline-text">파나소닉 대학생
+                  홍보대사 PR챌린지 장려상</span></div>
+              <div class="timeline-item"><span class="timeline-year">2014</span><span class="timeline-text">GTQ 포토샵
+                  1급</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 05. CONTACT -->
+    <div class="section" id="contact" style="padding-bottom: 40px; padding-top: 150px;">
+      <div class="about-layout hero-grid-layout" style="align-items: end;">
+        <div class="about-left" style="display: flex; flex-direction: column; justify-content: flex-end;">
+          <div class="footer-big fade-in">noh<br>namh<span style="letter-spacing: 1px;">ee</span></div>
+        </div>
+        <div class="about-right">
+
+          <h2 class="contact-title fade-in">Contact &darr;</h2>
+
+          <div class="contact-grid-new fade-in">
+            <div class="contact-col">
+              <h3 class="contact-col-title">Direct</h3>
+              <a href="tel:010-6776-4994" class="contact-link">010. 6776. 4994</a>
+              <a href="mailto:nnh0627@naver.com" class="contact-link">nnh0627@naver.com</a>
+            </div>
+            <div class="contact-col">
+              <h3 class="contact-col-title">Follow me</h3>
+              <a href="https://www.instagram.com/nammingming__s2" target="_blank" rel="noopener"
+                class="contact-link">Instagram</a>
+            </div>
+          </div>
+
+          <div class="footer-copy fade-in">
+            All rights reserved. Copyright ©2026<br>
+            Namhee Noh. Brand Contents Designer.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div> <!-- End about-view-wrapper -->
+
+  <!-- Project Detail Fullscreen Overlay -->
+
+  <!-- Project 03: Contents BX Template -->
+  <div id="projectDetailOverlay_03" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">Product visual & AD Contents</h2>
+
+          <p class="project-about-desc">인스타그램 채널의 일관된 톤앤무드 유지를 위해 제품 중심의 비주얼 콘텐츠를 상시 제작해 왔습니다. 기획자와의 지속적인 협업을 통해 도출된
+            메시지를 브랜드가 추구하는 시각적 감도에 맞게 가공하였으며, 모델 컷을 제외한 상품 컷은 직접 촬영을 주도했습니다. 촬영 후 베스트 컷을 선별하여, 전체적인 톤앤무드가 부드럽게 연결되도록
+            조율했습니다.<br>이렇게 아카이빙된 에셋들은 인스타그램 콘텐츠를 넘어 실제 메타(Meta) 광고의 핵심 소스로도 다양하게 활용되었습니다.<br><br><strong>특히 지그재그 채널의
+              썸네일을 촬영한 컨셉 컷과 모델컷으로 전면 교체 후, 이틀 전 대비 2배 이상 상승한 일 주문액 689만 원을 기록하는 등 매출에 기여하였습니다.</strong></p>
+
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2026 - 2020</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right" style="background-color: #000; padding: 0;">
+          <div class="contents-bx-grid active" id="bx-page-1">
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_01.jpg" alt="Contents Image 1">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_02.jpg" alt="Contents Image 2">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_03.jpg" alt="Contents Image 3">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_04.jpg" alt="Contents Image 4">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_05.jpg" alt="Contents Image 5">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_06.jpg" alt="Contents Image 6">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_07.jpg" alt="Contents Image 7">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_08.jpg" alt="Contents Image 8">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_09.jpg" alt="Contents Image 9">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+          </div>
+
+          <div class="contents-bx-grid" id="bx-page-2" style="counter-reset: bx-counter 9;">
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_10.jpg" alt="Contents Image 10">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_11.jpg" alt="Contents Image 11">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_12.jpg" alt="Contents Image 12">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_13.jpg" alt="Contents Image 13">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_14.jpg" alt="Contents Image 14">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_15.jpg" alt="Contents Image 15">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_16.jpg" alt="Contents Image 16">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_17.jpg" alt="Contents Image 17">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_18.jpg" alt="Contents Image 18">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+          </div>
+
+          <div class="contents-bx-grid" id="bx-page-3" style="counter-reset: bx-counter 18;">
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_19.jpg" alt="Contents Image 19">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_20.jpg" alt="Contents Image 20">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_21.jpg" alt="Contents Image 21">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_22.jpg" alt="Contents Image 22">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_23.jpg" alt="Contents Image 23">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_24.jpg" alt="Contents Image 24">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_25.jpg" alt="Contents Image 25">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_26.jpg" alt="Contents Image 26">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+            <div class="bx-item">
+              <img src="_source/images/projects/08_insta_mood/images/con_27.jpg" alt="Contents Image 27">
+              <div class="bx-caption" style="color: #fff; background-color: #000;"><span class="bx-number"></span></div>
+            </div>
+          </div>
+
+          <div class="bx-footer" style="background-color: #000; color: #fff;">
+            <div class="bx-footer-left bx-pagination">
+              <span class="bx-page-link active" onclick="changeBxPage(1)">01</span>
+              <span class="bx-page-link" onclick="changeBxPage(2)">02</span>
+              <span class="bx-page-link" onclick="changeBxPage(3)">03</span>
+            </div>
+            <div class="bx-footer-right">
+              Noh namhee portfolio<br>font : Noto Serif
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 04: Video Contents Template -->
+  <div id="projectDetailOverlay_04" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">Short-form Video Contents</h2>
+
+          <p class="project-about-desc">인스타그램 릴스와 유튜브 쇼츠 채널에 최적화된 세로형 숏폼 비주얼 광고 영상들을 제작했습니다. 시장에서 반응하는 소구 포인트를 도출하기 위해
+            사전 레퍼런스 분석을 거쳐 직접 대본 기획부터 촬영, 최종 영상 편집까지 전 과정을 주도했습니다.<br><br>단지 비주얼을 다듬는 것을 넘어 기획 단계부터 깊이 참여하며, 메시지를 시각적으로
+            어떻게 효과적으로 안착시킬지 깊게 고민하는 계기가 되었습니다. 이 과정을 통해 영상 콘텐츠가 제작되는 전체적인 실무 프로세스를 익히고 한 단계 성장할 수 있는 좋은 기회였습니다.</p>
+
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Premiere Pro">Pr</span>
+              <span class="tool-icon" title="After Effects">Ae</span>
+              <span class="tool-icon" title="Capcut">Cc</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2025 - 2023</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+
+        <div class="project-detail-right" style="background-color: var(--bg); padding: 0; overflow-y: auto;">
+          <div class="project-source-section"
+            style="height: 100%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; background-color: transparent;">
+
+            <h3 class="section-heading" style="color: #fff; margin-bottom: 50px;">Short-form Archive</h3>
+
+            <div class="artwork-carousel" id="videoCarousel_04">
+              <div class="artwork-carousel-track video-track" id="videoTrack_04">
+
+                <div class="artwork-slide video-slide">
+                  <div class="video-device-frame">
+                    <video muted playsinline loop src="_source/images/projects/10_vedio/01.mp4"></video>
+                  </div>
+                  <div class="video-caption">신상 겨울 파자마 하울.mp4</div>
+                </div>
+
+                <div class="artwork-slide video-slide">
+                  <div class="video-device-frame">
+                    <video muted playsinline loop src="_source/images/projects/10_vedio/02.mp4"></video>
+                  </div>
+                  <div class="video-caption">파자마파티 룩북.mp4</div>
+                </div>
+
+                <div class="artwork-slide video-slide">
+                  <div class="video-device-frame">
+                    <video muted playsinline loop src="_source/images/projects/10_vedio/03.mp4"></video>
+                  </div>
+                  <div class="video-caption">글램 브라 소구포인트 룩북.mp4</div>
+                </div>
+
+                <div class="artwork-slide video-slide">
+                  <div class="video-device-frame">
+                    <video muted playsinline loop src="_source/images/projects/10_vedio/04.mp4"></video>
+                  </div>
+                  <div class="video-caption">블랙 프라이데이 광고 영상.mp4</div>
+                </div>
+
+                <div class="artwork-slide video-slide">
+                  <div class="video-device-frame">
+                    <video muted playsinline loop src="_source/images/projects/10_vedio/05.mp4"></video>
+                  </div>
+                  <div class="video-caption">빈티지 캠코더 감성 광고.mp4</div>
+                </div>
+
+                <div class="artwork-slide video-slide">
+                  <div class="video-device-frame">
+                    <video muted playsinline loop src="_source/images/projects/10_vedio/06.mp4"></video>
+                  </div>
+                  <div class="video-caption">괄친자 직원의 괄사 영업 광고 영상.mp4</div>
+                </div>
+
+                <div class="artwork-slide video-slide">
+                  <div class="video-device-frame">
+                    <video muted playsinline loop src="_source/images/projects/10_vedio/07.mp4"></video>
+                  </div>
+                  <div class="video-caption">글램 브라 아웃핏 광고.mp4</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 05: Instagram AD Campaign -->
+  <div id="projectDetailOverlay_05" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">META AD CONTENTS</h2>
+
+          <p class="project-about-desc">메타(Meta)채널의 광고 효율 극대화를 위해 다양한 포맷의 광고 콘텐츠를 상시 기획·제작했습니다. 새로운 시각적 시도를 주도함과 동시에
+            마케팅팀과 광고 효율 데이터를 분석하며, 어떤 기획과 레이아웃이 유저에게 먹히는지 연구하며 작업왔습니다.<br><br>데이터 검증을 통해 유독 효율이 높았던 비주얼 요소들을 아카이빙하고 이를
+            시스템적으로 템플릿화하여 효율성을 높였습니다.<br>트렌디한 레퍼런스나 새로운 아이디어가 있을 때면 먼저 작업하여 역으로 광고 집행을 제안하는 등 주도적인 콘텐츠 테스트를 반복했습니다.</p>
+
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+              <span class="tool-icon" title="Illustrator">Ai</span>
+              <span class="tool-icon" title="Premiere Pro">Pr</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2026 - 2017</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+
+        <div class="project-detail-right"
+          style="background-color: #000; padding: 0; overflow-y: hidden; position: relative;">
+          <!-- Blurry background extracted from image -->
+          <div
+            style="position: absolute; top: -5%; left: -5%; right: -5%; bottom: -5%; background-image: url('_source/images/projects/09_AD_bigmoney/1008_컨셉컷 광고 (rose)/02.jpg'); background-size: cover; background-position: center; filter: blur(50px) brightness(0.6); z-index: 0;">
+          </div>
+
+          <div class="project-source-section"
+            style="height: 100%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: transparent; position: relative; z-index: 1;">
+
+            <div class="insta-ad-grid"
+              style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; width: 100%; max-width: 1400px; padding: 0;">
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/잃어버린가슴.png'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/잃어버린가슴.png"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/02블프.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/02블프.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/라인리스_7.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/라인리스_7.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/윗가슴채워주는_광고.png'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/윗가슴채워주는_광고.png"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/01.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/01.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/03.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/03.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/2_05_03.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/2_05_03.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/02.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/02.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/08_2.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/08_2.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/7일간.png'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/7일간.png"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/차콜.png'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/차콜.png"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/심리스 ver.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/심리스 ver.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/05.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/05.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/01_심리스.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/01_심리스.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/04.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/04.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/1029_릴레이특가crm광고_gemma_thumb.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/1029_릴레이특가crm광고_gemma_thumb.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/01_04.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/01_04.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/파란ver.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/파란ver.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/Comp 1_thumb.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/Comp 1_thumb.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/진짜-만원2.png'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/진짜-만원2.png"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/01_봄맞이.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/01_봄맞이.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/heart icon ver_thumb.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/heart icon ver_thumb.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/01_04 copy.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/01_04 copy.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/라인리스 텍스트베리_01.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/라인리스 텍스트베리_01.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/01맴버쉽리뉴얼.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/01맴버쉽리뉴얼.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/인스타툰_01.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/인스타툰_01.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+              <div class="insta-grid-item"
+                style="position: relative; aspect-ratio: 1/1; border-radius: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);">
+                <div
+                  style="position: absolute; top: -50%; left: -50%; right: -50%; bottom: -50%; background-image: url('_source/images/projects/09_AD_bigmoney/02굿바이성수.jpg'); background-size: cover; background-position: center; filter: blur(80px) saturate(200%) brightness(0.8); transform: scale(1.5); z-index: 0;">
+                </div>
+                <div style="position: relative; height: 70%; aspect-ratio: 1206/1623; z-index: 1; overflow: hidden;">
+                  <div
+                    style="position: absolute; left: 0%; top: 11.58%; width: 100%; height: 73.57%; z-index: 1; overflow: hidden;">
+                    <img src="_source/images/projects/09_AD_bigmoney/02굿바이성수.jpg"
+                      style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <img src="_source/images/common/instargram_format.png"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project 06: Mother & Daughter Campaign -->
+  <div id="projectDetailOverlay_06" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">Mother & Daughter Campaign Page</h2>
+          <p class="project-about-desc">브랜드가 추구하는 '편안함'의 가치를 정서적으로 확장하기 위한 '모녀 칠페인' 브랜딩 이벤트입니다. 서로 맞닿은 살결, 맞잡은 손 등 모녀 특유의 다정한 유대감에 집중하는 츠페인 페이지를 제작하였습니다. 소중한 순간을 영원히 기록하고 전시한다는 의미를 시각화하기 위해 폴라로이드 프레임과 격자형 액자 레이아웃을 핵심 디자인 요소로 활용했습니다.</p>
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2021</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <!-- Hero -->
+          <div class="project-hero" style="background-color: #fff;">
+            <img src="_source/images/projects/04_mom/Hero_Image/Hero_Image.png" alt="Mother Campaign Hero">
+          </div>
+
+          <!-- Work detail (Colors & Typography) -->
+          <div class="project-work-detail" style="background-color: #fff; color: #161616;">
+            <div class="detail-col colors">
+              <h3 class="section-heading">Colors</h3>
+              <div class="color-chips-container">
+                <div class="color-chip-card" style="background: #f7f1e1; color: #161616;">
+                  <div class="chip-name">Warm Cream</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 247/241/225</div>
+                    <div><span>CMYK</span> 3/4/11/0</div>
+                    <div><span>HEX</span> #F7F1E1</div>
+                    <div class="pantone-meta">PANTONE 7527 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #499be7; color: #fff;">
+                  <div class="chip-name">Emotional Sky</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 73/155/231</div>
+                    <div><span>CMYK</span> 63/28/0/0</div>
+                    <div><span>HEX</span> #499BE7</div>
+                    <div class="pantone-meta">PANTONE 284 C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-col typography">
+              <h3 class="section-heading">Typography</h3>
+              <div class="typography-grid">
+                <div class="typography-item" style="font-family: 'Pretendard', sans-serif;">
+                  <h4>Pretendard</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+                <div class="typography-item" style="font-family: 'YoonMyungjoPro750', serif;">
+                  <h4>YoonMyungjoPro750</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View Over Device -->
+          <div class="project-viewover" style="background-color: #f7f1e1;">
+            <h3 class="section-heading" style="color: #161616;">View over</h3>
+            <div class="device-wrapper">
+              <div class="device-frame">
+                <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                <div class="scroll-overlay" id="deviceScrollOverlay_06">
+                  <span class="scroll-text">Scroll</span>
+                  <div class="scroll-icon-group">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+                <div class="device-mockup" id="deviceMockup_06">
+                  <img src="_source/images/projects/04_mom/View_Over/viewover.jpg" alt="View Over">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork Carousel -->
+          <div class="project-source-section" style="background-color: #499be7; color: #f7f1e1;">
+            <h3 class="section-heading" style="color: #f7f1e1; margin-bottom: 60px;">Artwork Variations</h3>
+            <div class="artwork-carousel" id="artworkCarousel_06">
+              <div class="artwork-carousel-track" id="artworkTrack_06">
+                <div class="artwork-slide"><img src="_source/images/projects/04_mom/Artwork_Carousel/01.png" alt="Artwork 1"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/04_mom/Artwork_Carousel/02.png" alt="Artwork 2"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/04_mom/Artwork_Carousel/03.png" alt="Artwork 3"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/04_mom/Artwork_Carousel/04.png" alt="Artwork 4"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/04_mom/Artwork_Carousel/05.png" alt="Artwork 5"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/04_mom/Artwork_Carousel/06.png" alt="Artwork 6"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/04_mom/Artwork_Carousel/07.jpg" alt="Artwork 7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 12: TZM Package Application System -->
+  <div id="projectDetailOverlay_12" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">TZM: Package Application System</h2>
+          <p class="project-about-desc">리브랜딩된 'TZM'의 오프라인 패키지 전체 리디자인을 리딩했습니다. 패키지의 높은 활용성을 고려해 브랜드를 장기적으로 각인시킬 수 있도록 소비자 개인 공간에 오래 남을 수 있는 패키지를 제작하는 것에 집중하여 작업하였습니다.</p>
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+              <span class="tool-icon" title="Illustrator">Ai</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2025</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <!-- Hero -->
+          <div class="project-hero" style="background-color: #000;">
+            <img src="_source/images/projects/11_TZM_Pakage_renewal/Hero_Image/Hero_Image.jpg" alt="TZM Package Hero">
+          </div>
+
+          <!-- Work detail (Colors & Typography) -->
+          <div class="project-work-detail" style="background-color: #000; color: #fff;">
+            <div class="detail-col colors">
+              <h3 class="section-heading" style="color: #FFFF7F;">Colors</h3>
+              <div class="color-chips-container">
+                <div class="color-chip-card" style="background: #FFFF7F; color: #0d0d0d;">
+                  <div class="chip-name">TZM Yellow</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 255/255/127</div>
+                    <div><span>CMYK</span> 5/0/60/0</div>
+                    <div><span>HEX</span> #FFFF7F</div>
+                    <div class="pantone-meta">PANTONE 3945 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #0d0d0d; color: #fff;">
+                  <div class="chip-name">TZM Black</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 13/13/13</div>
+                    <div><span>CMYK</span> 70/67/64/80</div>
+                    <div><span>HEX</span> #0D0D0D</div>
+                    <div class="pantone-meta">PANTONE Black 6 C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-col typography">
+              <h3 class="section-heading" style="color: #FFFF7F;">Typography</h3>
+              <div class="typography-grid">
+                <div class="typography-item" style="font-family: 'Pretendard', sans-serif;">
+                  <h4>Pretendard</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+                <div class="typography-item" style="font-family: 'Akhand', sans-serif;">
+                  <h4>Akhand</h4>
+                  <p class="typo-sample">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package Images Section -->
+          <div style="background-color: #f5f5f5;">
+            <img src="_source/images/projects/11_TZM_Pakage_renewal/package_01.jpg" alt="TZM Package 01" style="width: 100%; display: block;">
+            <img src="_source/images/projects/11_TZM_Pakage_renewal/package_02.jpg" alt="TZM Package 02" style="width: 100%; display: block;">
+          </div>
+
+          <!-- Text Section -->
+          <div style="background-color: #fff; padding: 80px 60px;">
+            <h4 style="font-size: 1.1rem; font-weight: 600; color: #161616; margin-bottom: 24px; letter-spacing: -0.02em;">Shopping Bag Color Strategy</h4>
+            <p style="font-size: 0.95rem; color: #555; line-height: 1.76; font-weight: 400; max-width: 680px;">
+              시중의 보편적인 화이트·블랙 쇼핑백들 사이에서 고객이 길거리에서 들고 다닐 때 한눈에 시선을 사로잡아 호기심을 유발할 수 있는 비주얼을 고민했습니다. 이에 온전한 레몬 빛을 내세운 TZM의 시그니처 옐로우 컬러를 전면에 과감히 적용하여, 일상 속에서 브랜드를 선명하게 각인시키는 것에 집중해 작업하였습니다.
+            </p>
+          </div>
+
+          <!-- Package Images Continued -->
+          <div style="background-color: #f5f5f5;">
+            <img src="_source/images/projects/11_TZM_Pakage_renewal/package_05.jpg" alt="TZM Package 05" style="width: 100%; display: block;">
+            <img src="_source/images/projects/11_TZM_Pakage_renewal/package_04.jpg" alt="TZM Package 04" style="width: 100%; display: block;">
+          </div>
+
+          <!-- View Over Device -->
+          <div class="project-viewover" style="background-color: #0d0d0d;">
+            <h3 class="section-heading" style="color: #FFFF7F;">View Over</h3>
+            <div class="device-wrapper">
+              <div class="device-frame">
+                <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                <div class="scroll-overlay" id="deviceScrollOverlay_12">
+                  <span class="scroll-text">Scroll</span>
+                  <div class="scroll-icon-group">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+                <div class="device-mockup" id="deviceMockup_12">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_01.jpg" alt="TZM Pop-up 01">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_02_2.gif" alt="TZM Pop-up 02">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_02_3.jpg" alt="TZM Pop-up 02-3">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_03.jpg" alt="TZM Pop-up 03">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_04.gif" alt="TZM Pop-up 04">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_05_01.jpg" alt="TZM Pop-up 05-01">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_05_02.jpg" alt="TZM Pop-up 05-02">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_05_03.jpg" alt="TZM Pop-up 05-03">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_05_04.jpg" alt="TZM Pop-up 05-04">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_05_05.jpg" alt="TZM Pop-up 05-05">
+                  <img src="_source/images/projects/11_TZM_Pakage_renewal/View_Over/0423-pop-up_06.jpg" alt="TZM Pop-up 06">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 11: Women Archive -->
+  <div id="projectDetailOverlay_11" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">Women Archive</h2>
+          <p class="project-about-desc">여성들에게 유익한 컨텐츠를 제공하며 여성 생애주기에 사용하는 모든 제품에 대한 정보 확인과 구매를 한번에 할 수 있는 플랫폼인 '우먼 아카이브(Women Archive)' 프로젝트의 온·오프라인 콘텐츠 제작을 담당했습니다. 유쾌하고 친근하게 유저들에게 다가가기 위해 카테고리별 8종의 '우아몬' 캐릭터와 컨텐츠는 드로잉으로 제공하여 친근함을 더했습니다. 오프라인 팝업스토어의 대형 시트지, 굿즈, 웰컴키트 제작까지 일관된 톤앤매너로 디자인 작업 진행 했습니다.</p>
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+              <span class="tool-icon" title="Illustrator">Ai</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2022</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <!-- Hero -->
+          <div class="project-hero" style="background-color: #fff;">
+            <img src="_source/images/projects/12_womanarchive/Hero_Image/Hero_Image.jpg" alt="Women Archive Hero">
+          </div>
+
+          <!-- Character Grid 3x3 -->
+          <div style="background-color: #fff; padding: 80px 40px;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 720px; margin: 0 auto;">
+              <img src="_source/images/projects/12_womanarchive/character/라이프.png" alt="라이프" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/러브.png" alt="러브" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/러브케어.png" alt="러브케어" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/여성건강.png" alt="여성건강" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/여성속옷.png" alt="여성속옷" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/월경용품.png" alt="월경용품" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/이슈.png" alt="이슈" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/트렌드.png" alt="트렌드" style="width: 100%; display: block;">
+              <img src="_source/images/projects/12_womanarchive/character/피플.png" alt="피플" style="width: 100%; display: block;">
+            </div>
+          </div>
+
+          <!-- wa_04 -->
+          <div style="background-color: #fff; padding: 0;">
+            <img src="_source/images/projects/12_womanarchive/wa_04.jpg" alt="Women Archive 4" style="width: 100%; display: block;">
+          </div>
+
+          <!-- wa_01 ~ wa_03 -->
+          <div style="background-color: #fff; padding: 0;">
+            <img src="_source/images/projects/12_womanarchive/wa_01.jpg" alt="Women Archive 1" style="width: 100%; display: block;">
+            <img src="_source/images/projects/12_womanarchive/wa_02.jpg" alt="Women Archive 2" style="width: 100%; display: block;">
+            <img src="_source/images/projects/12_womanarchive/wa_03.jpg" alt="Women Archive 3" style="width: 100%; display: block;">
+          </div>
+
+          <!-- View Over Device -->
+          <div class="project-viewover" style="background-color: #fff;">
+            <h3 class="section-heading" style="color: #161616;">View over</h3>
+            <div class="device-wrapper">
+              <div class="device-frame">
+                <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                <div class="scroll-overlay" id="deviceScrollOverlay_11">
+                  <span class="scroll-text">Scroll</span>
+                  <div class="scroll-icon-group">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+                <div class="device-mockup" id="deviceMockup_11">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p1_01.jpg" alt="View 1">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p1_03.jpg" alt="View 2">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p1_04.jpg" alt="View 3">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p1_05.jpg" alt="View 4">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p1_06.jpg" alt="View 5">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p1_07.jpg" alt="View 6">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p2.jpg" alt="View 7">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p2_01.jpg" alt="View 8">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p2_02.jpg" alt="View 9">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p2_03.jpg" alt="View 10">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p2_04.jpg" alt="View 11">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p2_05.jpg" alt="View 12">
+                  <img src="_source/images/projects/12_womanarchive/View_Over/p2_06.jpg" alt="View 13">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork Carousel -->
+          <div class="project-source-section" style="background-color: #333; color: #fff;">
+            <h3 class="section-heading" style="color: #fff; margin-bottom: 60px;">Artwork Variations</h3>
+            <div class="artwork-carousel" id="artworkCarousel_11">
+              <div class="artwork-carousel-track" id="artworkTrack_11">
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/Layer 1.png" alt="Artwork 1"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/Group 156.png" alt="Artwork 2"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/Group 414.png" alt="Artwork 3"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/본문2.png" alt="Artwork 4"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/본문2-1.png" alt="Artwork 5"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/생리대를 위한 궁극적 가이드.png" alt="Artwork 6"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/여성 월경 진화.png" alt="Artwork 7"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/12_womanarchive/Artwork_Carousel/왁싱.png" alt="Artwork 8"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 10: Chuseok Promotion -->
+  <div id="projectDetailOverlay_10" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">Chuseok Promotion Page</h2>
+          <p class="project-about-desc">명절 기획 의도에 맞춰 보름달 원형 아트웍과 전통 서체로 한국적인 무드를 현대적으로 풀어낸 추석 프로모션 페이지를 디자인 했습니다. 차분한 네이비 베이스 컬러를 통해 유저의 시각적 피로도를 낮췄습니다. 추가적으로 연휴 직후 보상 심리로 쇼핑이 활발해지는 유저 패턴에 착안하여 '연휴 이후 프로모션 연장 액션'이 필요함을 선제 제안해 '적립금 두배 이벤트'를 추석 이후 추가로 진행했으며, 기존 디자인 뼈대는 유지한 채 차분한 비취색으로 컬러만 변주하는 방식으로 리소스를 효율화하며 무드가 끊기지 않도록 작업했습니다.</p>
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2025</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <!-- Hero -->
+          <div class="project-hero" style="background-color: #000;">
+            <img src="_source/images/projects/07_Chuseok/Hero_Image/Hero_Image.jpg" alt="Chuseok Promotion Hero">
+          </div>
+
+          <!-- Work detail (Colors & Typography) -->
+          <div class="project-work-detail" style="background-color: #000; color: #fff;">
+            <div class="detail-col colors">
+              <h3 class="section-heading" style="color: #E8A355;">Colors</h3>
+              <div class="color-chips-container">
+                <div class="color-chip-card" style="background: #E8A355; color: #161C34;">
+                  <div class="chip-name">Harvest Amber</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 232/163/85</div>
+                    <div><span>CMYK</span> 6/36/68/0</div>
+                    <div><span>HEX</span> #E8A355</div>
+                    <div class="pantone-meta">PANTONE 7565 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #161C34; color: #fff;">
+                  <div class="chip-name">Deep Navy</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 22/28/52</div>
+                    <div><span>CMYK</span> 93/82/43/46</div>
+                    <div><span>HEX</span> #161C34</div>
+                    <div class="pantone-meta">PANTONE 282 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #85CFD2; color: #161C34;">
+                  <div class="chip-name">Muted Jade</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 133/207/210</div>
+                    <div><span>CMYK</span> 42/4/17/0</div>
+                    <div><span>HEX</span> #85CFD2</div>
+                    <div class="pantone-meta">PANTONE 5503 C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-col typography">
+              <h3 class="section-heading" style="color: #E8A355;">Typography</h3>
+              <div class="typography-grid">
+                <div class="typography-item" style="font-family: 'Pretendard', sans-serif;">
+                  <h4>Pretendard</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+                <div class="typography-item" style="font-family: 'BBH Hegarty', sans-serif;">
+                  <h4>BBH Hegarty</h4>
+                  <p class="typo-sample">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View Over Device (TABBED) -->
+          <div class="project-viewover" style="background-color: #fff;">
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+              <h3 class="section-heading" style="color: #161C34; margin-bottom: 0;">View over</h3>
+              <!-- Tab Bar -->
+              <div style="display: flex; gap: 0;">
+                <button class="viewover-tab active" data-tab="10a" onclick="switchViewOverTab(this, '10a', '10b')"
+                  style="padding: 8px 22px; font-size: 11px; font-family: 'Pretendard', sans-serif; font-weight: 600; letter-spacing: 0.5px; border: 1px solid #161616; background: #161616; color: #fff; cursor: pointer; border-radius: 4px 0 0 4px; transition: all 0.3s ease;">
+                  Promotion 01
+                </button>
+                <button class="viewover-tab" data-tab="10b" onclick="switchViewOverTab(this, '10b', '10a')"
+                  style="padding: 8px 22px; font-size: 11px; font-family: 'Pretendard', sans-serif; font-weight: 600; letter-spacing: 0.5px; border: 1px solid #161616; background: transparent; color: #161616; cursor: pointer; border-radius: 0 4px 4px 0; transition: all 0.3s ease;">
+                  Promotion 02
+                </button>
+              </div>
+            </div>
+            <!-- Device 1: View_Over (추석 혜택전) -->
+            <div id="viewoverPanel_10a" style="display: block; margin-top: 5%;">
+              <div class="device-wrapper">
+                <div class="device-frame">
+                  <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                  <div class="scroll-overlay" id="deviceScrollOverlay_10a">
+                    <span class="scroll-text">Scroll</span>
+                    <div class="scroll-icon-group">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                  </div>
+                  <div class="device-mockup" id="deviceMockup_10a">
+                    <img src="_source/images/projects/07_Chuseok/View_Over/chu_01.jpg" alt="View 1">
+                    <img src="_source/images/projects/07_Chuseok/View_Over/chu_02.jpg" alt="View 2">
+                    <img src="_source/images/projects/07_Chuseok/View_Over/chu_03.jpg" alt="View 3">
+                    <img src="_source/images/projects/07_Chuseok/View_Over/chu_04_btn.jpg" alt="View 4">
+                    <img src="_source/images/projects/07_Chuseok/View_Over/chu_05.jpg" alt="View 5">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Device 2: View_Over2 (앵콜 세일) -->
+            <div id="viewoverPanel_10b" style="display: none; margin-top: 5%;">
+              <div class="device-wrapper">
+                <div class="device-frame">
+                  <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                  <div class="scroll-overlay" id="deviceScrollOverlay_10b">
+                    <span class="scroll-text">Scroll</span>
+                    <div class="scroll-icon-group">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                  </div>
+                  <div class="device-mockup" id="deviceMockup_10b">
+                    <img src="_source/images/projects/07_Chuseok/View_Over2/chu_01.jpg" alt="View2 1">
+                    <img src="_source/images/projects/07_Chuseok/View_Over2/chu_02.jpg" alt="View2 2">
+                    <img src="_source/images/projects/07_Chuseok/View_Over2/chu_03.jpg" alt="View2 3">
+                    <img src="_source/images/projects/07_Chuseok/View_Over2/chu_btn_04.jpg" alt="View2 4">
+                    <img src="_source/images/projects/07_Chuseok/View_Over2/chu_05.jpg" alt="View2 5">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork Carousel -->
+          <div class="project-source-section" style="background-color: #161C34; color: #fff;">
+            <h3 class="section-heading" style="color: #fff; margin-bottom: 60px;">Artwork Variations</h3>
+            <div class="artwork-carousel" id="artworkCarousel_10">
+              <div class="artwork-carousel-track" id="artworkTrack_10">
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/Artboard 1.png" alt="Artwork 1"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/Artboard 1 copy.png" alt="Artwork 2"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/Artboard 2.png" alt="Artwork 3"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/Artboard 2 copy.png" alt="Artwork 4"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/Artboard 3.png" alt="Artwork 5"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/1200x628_03.png" alt="Artwork 6"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/chu_01.jpg" alt="Artwork 7"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/추석_crm1.jpg" alt="Artwork 8"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/추석_crm2.png" alt="Artwork 9"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/07_Chuseok/Artwork_Carousel/추석_crm3.png" alt="Artwork 10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 09: TZM Family Day -->
+  <div id="projectDetailOverlay_09" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">TZM Family Day Promotion Page</h2>
+          <p class="project-about-desc">더잠(THEZAM)의 리브랜딩 'TZM'을 각인시키기 위한 가정의 달 선물 기획전 및 프로모션 페이지를 제작했습니다. 메인 포인트 컬러인 '레몬 옐로우' 사용과 '사랑의 하트'를 컨셉으로 TZM 무드에 맞는 전체적으로 깔끔하고 컴팩트함을 집중하여 작업했습니다.</p>
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2025</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <!-- Hero -->
+          <div class="project-hero" style="background-color: #000;">
+            <img src="_source/images/projects/06_Famliyday/Hero_Image/Hero_Image.jpg" alt="TZM Family Day Hero">
+          </div>
+
+          <!-- Work detail (Colors & Typography) -->
+          <div class="project-work-detail" style="background-color: #000; color: #fff;">
+            <div class="detail-col colors">
+              <h3 class="section-heading" style="color: #FFFF7F;">Colors</h3>
+              <div class="color-chips-container">
+                <div class="color-chip-card" style="background: #FFFF7F; color: #0d0d0d;">
+                  <div class="chip-name">TZM Yellow</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 255/255/127</div>
+                    <div><span>CMYK</span> 5/0/60/0</div>
+                    <div><span>HEX</span> #FFFF7F</div>
+                    <div class="pantone-meta">PANTONE 3945 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #0d0d0d; color: #fff;">
+                  <div class="chip-name">TZM Black</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 13/13/13</div>
+                    <div><span>CMYK</span> 70/67/64/80</div>
+                    <div><span>HEX</span> #0D0D0D</div>
+                    <div class="pantone-meta">PANTONE Black 6 C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-col typography">
+              <h3 class="section-heading" style="color: #FFFF7F;">Typography</h3>
+              <div class="typography-grid">
+                <div class="typography-item" style="font-family: 'Pretendard', sans-serif;">
+                  <h4>Pretendard</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+                <div class="typography-item" style="font-family: 'Akhand', sans-serif;">
+                  <h4>Akhand</h4>
+                  <p class="typo-sample">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Communication Record (TZM Family Day has none) -->
+
+          <!-- View Over Device -->
+          <div class="project-viewover" style="background-color: #FFFF7F;">
+            <h3 class="section-heading" style="color: #0d0d0d;">View over</h3>
+            <div class="device-wrapper">
+              <div class="device-frame">
+                <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                <div class="scroll-overlay" id="deviceScrollOverlay_09">
+                  <span class="scroll-text">Scroll</span>
+                  <div class="scroll-icon-group">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+                <div class="device-mockup" id="deviceMockup_09">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_01.jpg" alt="View 1">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_02.jpg" alt="View 2">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_032.jpg" alt="View 3">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_04.jpg" alt="View 4">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_05_2.jpg" alt="View 5">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_06.jpg" alt="View 6">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_07.jpg" alt="View 7">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_08_01.jpg" alt="View 8">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_08_02.jpg" alt="View 9">
+                  <img src="_source/images/projects/06_Famliyday/View_Over/ent_0429_9.jpg" alt="View 10">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork Carousel -->
+          <div class="project-source-section" style="background-color: #000; color: #FFFF7F;">
+            <h3 class="section-heading" style="color: #FFFF7F; margin-bottom: 60px;">Artwork Variations</h3>
+            <div class="artwork-carousel" id="artworkCarousel_09">
+              <div class="artwork-carousel-track" id="artworkTrack_09">
+                <div class="artwork-slide"><img src="_source/images/projects/06_Famliyday/Artwork_Carousel/fin_더잠 인스타 0428_02.jpg" alt="Artwork 1"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/06_Famliyday/Artwork_Carousel/fin_더잠 인스타 0428_03.jpg" alt="Artwork 2"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/06_Famliyday/Artwork_Carousel/Artboard 1 copy 7.jpg" alt="Artwork 3"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/06_Famliyday/Artwork_Carousel/Artboard 1 copy 9.jpg" alt="Artwork 4"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/06_Famliyday/Artwork_Carousel/Artboard 1 copy 10.jpg" alt="Artwork 5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Project 08: 11th THEZAM DAY -->
+  <div id="projectDetailOverlay_08" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">11th THEZAM DAY Promotion Page</h2>
+          <p class="project-about-desc">브랜드의 연중 최대 행사인 '11주년 더잠데이'의 프로모션 페이지를 디자인 했습니다. 단순한 세일 행사를 넘어 브랜드의 축제 무드를 직관적으로 시각화 하기 위해 기존의 모델 컷이나 2D 그래픽 아트웍 중심의 포맷에서 벗어나, 실제 오브제가 주는 아날로그 감성과 밀도감을 전달하고자 케이크를 활용한 실물 촬영을 진행. 소품 세팅, 현장 디렉팅까지 전 과정을 주도하며 비주얼 소스를 직접 만들며 페이지를 완성하였습니다.</p>
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+              <span class="tool-icon" title="After Effects">Ae</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2023</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <div class="project-hero" style="background-color: #000;">
+            <img src="_source/images/projects/05_11th_thezamday/Hero_Image/Hero_Image.jpg" alt="11th THEZAM DAY Hero">
+          </div>
+          <div class="project-work-detail" style="background-color: #000; color: #fff;">
+            <div class="detail-col colors">
+              <h3 class="section-heading" style="color: #f75337;">Colors</h3>
+              <div class="color-chips-container">
+                <div class="color-chip-card" style="background: #f75337; color: #fff;">
+                  <div class="chip-name">Tangerine Tango</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 247/83/55</div>
+                    <div><span>CMYK</span> 0/80/78/0</div>
+                    <div><span>HEX</span> #F75337</div>
+                    <div class="pantone-meta">PANTONE 172 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #00f600; color: #000;">
+                  <div class="chip-name">Green Gecko</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 0/246/0</div>
+                    <div><span>CMYK</span> 59/0/100/0</div>
+                    <div><span>HEX</span> #00F600</div>
+                    <div class="pantone-meta">PANTONE 802 C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-col typography">
+              <h3 class="section-heading" style="color: #f75337;">Typography</h3>
+              <div class="typography-grid">
+                <div class="typography-item" style="font-family: 'YoonGothic750', sans-serif;">
+                  <h4>YoonGothic 750</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+                <div class="typography-item" style="font-family: 'Gotham', sans-serif;">
+                  <h4>Gotham</h4>
+                  <p class="typo-sample">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Communication Record -->
+          <div class="project-comm-section" style="background-color: #000; padding: 88px 40px 88px 60px; overflow: hidden;" id="commSection_08">
+            <h3 class="section-heading" style="color: #fff;">Communication Record</h3>
+            <div style="max-width: 600px; margin: 0 auto; font-family: 'Pretendard', sans-serif; display: flex; flex-direction: column; justify-content: flex-end; min-height: 420px;">
+              <div class="comm-track" style="display: flex; flex-direction: column; gap: 18px; font-size: 13px; line-height: 1.7; min-height: 520px; justify-content: flex-end;">
+                <!-- Message 1: Rose -->
+                <div class="comm-msg" data-comm="08" style="margin-left: 30%; display: none; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease;">
+                  <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px; justify-content: flex-end;">
+                    <span style="font-size: 10px; color: rgba(255,255,255,0.4);">Rose (me)</span>
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: #f75337; flex-shrink: 0;"></div>
+                  </div>
+                  <div style="background: #FDEBD4; color: #111; padding: 14px 18px; border-radius: 14px 14px 4px 14px; text-align: left; font-weight: 400;">
+                    "Joy! 이번 11주년 이벤트 전반에 유저 반응을 더 끌어올릴 후킹 요소를 추가하면 좋을 것 같아요. 기획단에서 수정 가능한 부분이 있을지 검토 부탁드려요!"
+                  </div>
+                </div>
+                <!-- Message 2: Joy -->
+                <div class="comm-msg" data-comm="08" style="margin-right: 30%; display: none; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease;">
+                  <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.15); flex-shrink: 0;"></div>
+                    <span style="font-size: 10px; color: rgba(255,255,255,0.4);">Joy (Planner)</span>
+                  </div>
+                  <div style="background: #fff; color: #111; padding: 14px 18px; border-radius: 14px 14px 14px 4px; text-align: left; font-weight: 400;">
+                    "좋은 생각이에요! 기존 5% 상품 대신 할인율이 큰 제품들로 바꾸면 어떨까요? 현재 디자인 프레임에서 혜택 노출 순서를 그대로 유지해도 어색하지 않을까요?"
+                  </div>
+                </div>
+                <!-- Message 3: Rose -->
+                <div class="comm-msg" data-comm="08" style="margin-left: 30%; display: none; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease;">
+                  <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px; justify-content: flex-end;">
+                    <span style="font-size: 10px; color: rgba(255,255,255,0.4);">Rose (me)</span>
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: #f75337; flex-shrink: 0;"></div>
+                  </div>
+                  <div style="background: #FDEBD4; color: #111; padding: 14px 18px; border-radius: 14px 14px 4px 14px; text-align: left; font-weight: 400;">
+                    "네, 제품 라인업을 바꾸니 후킹 우려가 완전히 해결되어서 훨씬 좋아요! 레이아웃상 노출 순서는 변경 없이 가도 무방하니, 프로덕트/CS 이슈만 체크하고 이대로 픽스하시죠!"
+                  </div>
+                </div>
+                <!-- Message 4: Joy -->
+                <div class="comm-msg" data-comm="08" style="margin-right: 30%; display: none; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease;">
+                  <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.15); flex-shrink: 0;"></div>
+                    <span style="font-size: 10px; color: rgba(255,255,255,0.4);">Joy (Planner)</span>
+                  </div>
+                  <div style="background: #fff; color: #111; padding: 14px 18px; border-radius: 14px 14px 14px 4px; text-align: left; font-weight: 400;">
+                    "확인 결과 타 부서 및 CS 이슈는 전혀 없다고 합니다! 그럼 말씀하신 대로 상품 구성 픽스하고, 노출 순서는 기존 기획안대로 최종 진행할게요. 🚀"
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View Over Device -->
+          <div class="project-viewover" style="background-color: #f75337;">
+            <h3 class="section-heading" style="color: #fff;">View over</h3>
+            <div class="device-wrapper">
+              <div class="device-frame">
+                <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                <div class="scroll-overlay" id="deviceScrollOverlay_08">
+                  <span class="scroll-text">Scroll</span>
+                  <div class="scroll-icon-group">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+                <div class="device-mockup" id="deviceMockup_08">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_01_2.jpg" alt="View 1">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_02_2.gif" alt="View 2">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_03_2.jpg" alt="View 3">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_04_2.jpg" alt="View 4">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_05_2.jpg" alt="View 5">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_06_2.jpg" alt="View 6">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_08_2.jpg" alt="View 7">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p1_09_2.jpg" alt="View 8">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p2_01_2.jpg" alt="View 9">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p2_02_2.jpg" alt="View 10">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p2_03_2.jpg" alt="View 11">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p2_04_2.jpg" alt="View 12">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p2_05_2.jpg" alt="View 13">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p2_06_2.jpg" alt="View 14">
+                  <img src="_source/images/projects/05_11th_thezamday/View_Over/p2_07_2.png" alt="View 15">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Artwork Carousel -->
+          <div class="project-source-section" style="background-color: #000; color: #f75337;">
+            <h3 class="section-heading" style="color: #f75337; margin-bottom: 60px;">Artwork Variations</h3>
+            <div class="artwork-carousel" id="artworkCarousel_08">
+              <div class="artwork-carousel-track" id="artworkTrack_08">
+                <div class="artwork-slide"><img src="_source/images/projects/05_11th_thezamday/Artwork_Carousel/pc_b.jpg" alt="Artwork 1"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/05_11th_thezamday/Artwork_Carousel/Group 1.jpg" alt="Artwork 2"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/05_11th_thezamday/Artwork_Carousel/Group 1 copy.jpg" alt="Artwork 3"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/05_11th_thezamday/Artwork_Carousel/Group 1 copy 2.jpg" alt="Artwork 4"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/05_11th_thezamday/Artwork_Carousel/Group 1 copy 3.jpg" alt="Artwork 5"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/05_11th_thezamday/Artwork_Carousel/Group 2.jpg" alt="Artwork 6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 01: Rolly -->
+  <div id="projectDetailOverlay_01" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">Rolly Product Detail Page</h2>
+
+          <p class="project-about-desc">신규 브랜드 ‘롤리’의 대표 제품인 바디 롤러 마사지기 상세페이지 외주 작업을 진행했습니다. 브랜드를 처음 접하는 고객들에게 친근하게 다가갈 수
+            있도록 세련되면서도 위트 있는 무드를 연출하는 데 집중했고, 동시에 제품의 기능적 신뢰감을 주는 데 초점을 맞췄습니다.<br><br>기획에 맞는 모델 컷 셀렉부터 피부 및 바디 라인 보정,
+            상세페이지 레이아웃 디자인, 그리고 카페24 최종 업로드 세팅까지 전 과정을 책임지고 전담했습니다.</p>
+
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+              <span class="tool-icon" title="Premiere Pro">Pr</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2026</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 90%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <!-- Hero -->
+          <div class="project-hero" style="background-color: #fff;">
+            <img src="_source/images/projects/01_Rolly/Hero_Image/Hero_Image.jpg" alt="Rolly Hero Artwork">
+          </div>
+
+          <!-- Work detail (Colors & Typography) -->
+          <div class="project-work-detail" style="background-color: #fff; color: #161616;">
+            <div class="detail-col colors">
+              <h3 class="section-heading" style="color: inherit;">Colors</h3>
+              <div class="color-chips-container">
+                <div class="color-chip-card" style="background: #bac76b; color: #000;">
+                  <div class="chip-name">Sage Green</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 186/199/107</div>
+                    <div><span>CMYK</span> 26/4/65/0</div>
+                    <div><span>HEX</span> #BAC76B</div>
+                    <div class="pantone-meta">PANTONE 583 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #fde38e; color: #000;">
+                  <div class="chip-name">Sandy Gold</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 253/227/142</div>
+                    <div><span>CMYK</span> 1/11/50/0</div>
+                    <div><span>HEX</span> #FDE38E</div>
+                    <div class="pantone-meta">PANTONE 1205 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #333333; color: #fff;">
+                  <div class="chip-name">Dark Charcoal</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 51/51/51</div>
+                    <div><span>CMYK</span> 69/63/62/58</div>
+                    <div><span>HEX</span> #333333</div>
+                    <div class="pantone-meta">PANTONE 426 C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-col typography">
+              <h3 class="section-heading" style="color: inherit;">Typography</h3>
+              <div class="typography-grid">
+                <div class="typography-item" style="font-family: 'Pretendard', sans-serif;">
+                  <h4>Pretendard</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+                <div class="typography-item" style="font-family: 'BBH Hegarty', serif;">
+                  <h4>BBH Hegarty</h4>
+                  <p class="typo-sample">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View Over Device -->
+          <div class="project-viewover" style="background-color: #bac76b;">
+            <h3 class="section-heading" style="color: #000;">View over</h3>
+            <div class="device-wrapper">
+              <div class="device-frame">
+                <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                <div class="scroll-overlay" id="deviceScrollOverlay_01">
+                  <span class="scroll-text">Scroll</span>
+                  <div class="scroll-icon-group">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="device-mockup" id="deviceMockup_01">
+                  <img src="_source/images/projects/01_Rolly/View_Over/01.jpg" alt="View 0">
+                  <img src="_source/images/projects/01_Rolly/View_Over/02_1.gif" alt="View 1">
+                  <img src="_source/images/projects/01_Rolly/View_Over/03.jpg" alt="View 2">
+                  <img src="_source/images/projects/01_Rolly/View_Over/04.jpg" alt="View 3">
+                  <img src="_source/images/projects/01_Rolly/View_Over/05.jpg" alt="View 4">
+                  <img src="_source/images/projects/01_Rolly/View_Over/06.jpg" alt="View 5">
+                  <img src="_source/images/projects/01_Rolly/View_Over/07.jpg" alt="View 6">
+                  <img src="_source/images/projects/01_Rolly/View_Over/08.jpg" alt="View 7">
+                  <img src="_source/images/projects/01_Rolly/View_Over/09.jpg" alt="View 8">
+                  <img src="_source/images/projects/01_Rolly/View_Over/10.gif" alt="View 9">
+                  <img src="_source/images/projects/01_Rolly/View_Over/11.gif" alt="View 10">
+                  <img src="_source/images/projects/01_Rolly/View_Over/12.jpg" alt="View 11">
+                  <img src="_source/images/projects/01_Rolly/View_Over/13.jpg" alt="View 12">
+                  <img src="_source/images/projects/01_Rolly/View_Over/14.jpg" alt="View 13">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Source Files — Apple Gallery Carousel -->
+          <div class="project-source-section" style="background-color: #fde38e; color: #161616;">
+            <h3 class="section-heading" style="color: inherit; margin-bottom: 60px;">Artwork Variations</h3>
+            <div class="artwork-carousel" id="artworkCarousel_01">
+              <div class="artwork-carousel-track" id="artworkTrack_01">
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/01.jpg"
+                    alt="Artwork 0"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/02.jpg"
+                    alt="Artwork 1"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/03.jpg"
+                    alt="Artwork 2"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/04.jpg"
+                    alt="Artwork 3"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/05.jpg"
+                    alt="Artwork 4"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/06.jpg"
+                    alt="Artwork 5"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/07.jpg"
+                    alt="Artwork 6"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/08_2.jpg"
+                    alt="Artwork 7"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/08_3.jpg"
+                    alt="Artwork 8"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/08_4.jpg"
+                    alt="Artwork 9"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/01_Rolly/Artwork_Carousel/08_5.jpg"
+                    alt="Artwork 10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="projectDetailOverlay_02" class="project-detail-overlay">
+    <button class="close-project-btn" onclick="closeProjectDetail(this)">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </button>
+    <div class="project-detail-container">
+      <div class="project-detail-grid">
+        <div class="project-detail-left">
+          <h2 class="project-title">Black Friday Promotion</h2>
+
+          <p class="project-about-desc">경쟁이 치열한 블랙프라이데이 시즌, 단순한 혜택 전달을 넘어 할인 정보를 직관적으로 각인시킴으로써 대중의 유입을 유도하고, 힙하고 감각적인
+            브랜드 이미지를 구축하는 비주얼 전략을 완성했습니다.</p>
+
+          <div class="project-meta-row">
+            <div class="project-tools">
+              <span class="tool-icon" title="Photoshop">Ps</span>
+              <span class="tool-icon" title="Illustrator">Ai</span>
+              <span class="tool-icon" title="Premiere Pro">Pr</span>
+            </div>
+            <span class="meta-sep">|</span>
+            <span>2025</span>
+            <span class="meta-sep">|</span>
+            <span>기여도 100%</span>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <!-- Hero -->
+          <div class="project-hero" style="background-color: #000;">
+            <img src="_source/images/projects/02_BlackFriday/thumb2.jpg" alt="Black Friday Main Artwork">
+          </div>
+
+          <!-- Work detail -->
+          <div class="project-work-detail" style="background-color: #000; color: #fff;">
+            <div class="detail-col colors">
+              <h3 class="section-heading" style="color: #25f636;">Colors</h3>
+              <div class="color-chips-container">
+                <div class="color-chip-card"
+                  style="background: #000; color: #fff; border: 1px solid rgba(255,255,255,0.15);">
+                  <div class="chip-name">Platform Black</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 0/0/0</div>
+                    <div><span>CMYK</span> 0/0/0/100</div>
+                    <div><span>HEX</span> #000000</div>
+                    <div class="pantone-meta">PANTONE Black 6 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #212121; color: #fff;">
+                  <div class="chip-name">Dark Charcoal</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 33/33/33</div>
+                    <div><span>CMYK</span> 69/63/62/58</div>
+                    <div><span>HEX</span> #212121</div>
+                    <div class="pantone-meta">PANTONE 426 C</div>
+                  </div>
+                </div>
+                <div class="color-chip-card" style="background: #25f636; color: #000;">
+                  <div class="chip-name">Neon Green</div>
+                  <div class="chip-meta">
+                    <div><span>RGB</span> 37/246/54</div>
+                    <div><span>CMYK</span> 55/0/83/0</div>
+                    <div><span>HEX</span> #25F636</div>
+                    <div class="pantone-meta">PANTONE 802 C</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail-col typography">
+              <h3 class="section-heading" style="color: #25f636;">Typography</h3>
+              <div class="typography-grid">
+                <div class="typography-item" style="font-family: 'Pretendard', sans-serif;">
+                  <h4>Pretendard</h4>
+                  <p class="typo-sample">
+                    가 나 다 라 마 바 사 아 자 차 카 타 파 하<br>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+                <div class="typography-item" style="font-family: 'Akhand', sans-serif;">
+                  <h4>Akhand</h4>
+                  <p class="typo-sample">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                    0 1 2 3 4 5 6 7 8 9 &nbsp;&nbsp; ! @ # $ % ^ & * ~ ? [ ] ;
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Viewover -->
+          <div class="project-viewover">
+            <h3 class="section-heading" style="color: #000;">View over</h3>
+            <div class="device-wrapper">
+              <div class="device-frame">
+                <img src="_source/images/common/iphone16pro_mockup.png" class="mockup-frame-img" alt="iPhone 16 Pro">
+                <div class="scroll-overlay" id="deviceScrollOverlay">
+                  <span class="scroll-text">Scroll</span>
+                  <div class="scroll-icon-group">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="device-mockup" id="deviceMockup">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_01.jpg" alt="Promotion 1">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_02.jpg" alt="Promotion 2">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_03.jpg" alt="Promotion 3">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_04.jpg" alt="Promotion 4">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_05.jpg" alt="Promotion 5">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_06.jpg" alt="Promotion 6">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_07.jpg" alt="Promotion 7">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_08.jpg" alt="Promotion 8">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_09.jpg" alt="Promotion 9">
+                  <img src="_source/images/projects/02_BlackFriday/1107_gif2.gif" alt="Promotion GIF">
+                  <img src="_source/images/projects/02_BlackFriday/1107ent_11.jpg" alt="Promotion 11">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Source Files — Apple Gallery Carousel -->
+          <div class="project-source-section" style="background-color: #25f636; color: #000;">
+            <h3 class="section-heading" style="color:#000; margin-bottom: 60px;">Artwork Variations</h3>
+            <div class="artwork-carousel" id="artworkCarousel">
+              <div class="artwork-carousel-track" id="artworkTrack">
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/CRM_1106_01.jpg" alt="Artwork 1"></div>
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/CRM_1106_02.jpg" alt="Artwork 2"></div>
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/CRM_1106_03.jpg" alt="Artwork 3"></div>
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/CRM_1106_05.jpg" alt="Artwork 4"></div>
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/CRM_1106_94.jpg" alt="Artwork 5"></div>
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/mo_251106_BF2.jpg" alt="Artwork 6"></div>
+                <div class="artwork-slide"><img src="_source/images/projects/02_BlackFriday/_project souce/mo_cg_BF.jpg"
+                    alt="Artwork 7"></div>
+
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/instargram_03.jpg" alt="Artwork 9"></div>
+                <div class="artwork-slide"><img
+                    src="_source/images/projects/02_BlackFriday/_project souce/instargram_05.jpg" alt="Artwork 10">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Project Detail Logic
+    function openProjectDetail(id) {
+      const overlayId = id || "projectDetailOverlay_02";
+      const overlay = document.getElementById(overlayId);
+      if (!overlay) return;
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      // Push a history entry so browser back closes the overlay
+      history.pushState({ overlay: overlayId }, '', '#' + overlayId);
+
+      const scrollContainer = overlay.querySelector('.project-detail-container');
+      if (scrollContainer) scrollContainer.scrollTo(0, 0); // Reset scroll
+
+      const mockup = overlay.querySelector('.device-mockup');
+      if (mockup) {
+        mockup.scrollTo(0, 0);
+        const scrollOverlay = mockup.previousElementSibling;
+        if (scrollOverlay && scrollOverlay.classList.contains('scroll-overlay')) {
+          scrollOverlay.style.display = 'flex';
+          setTimeout(() => scrollOverlay.style.opacity = '1', 10);
+        }
+      }
+
+      // Communication Record fade-up animation
+      const commMsgs = overlay.querySelectorAll('.comm-msg');
+      if (commMsgs.length > 0) {
+        startCommAnimation(overlay, commMsgs);
+      }
+    }
+
+    // Internal close (no history manipulation)
+    function _closeOverlay(overlay) {
+      if (!overlay) return;
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      const ds = document.getElementById('directLoadStyle');
+      if (ds) ds.remove();
+      stopCommAnimation(overlay);
+    }
+
+    function closeProjectDetail(btn) {
+      const overlay = btn.closest(".project-detail-overlay");
+      _closeOverlay(overlay);
+      // Go back in history to remove the pushed state
+      history.back();
+    }
+
+    // Browser back button closes overlay
+    window.addEventListener('popstate', function(e) {
+      const activeOverlay = document.querySelector('.project-detail-overlay.active');
+      if (activeOverlay) {
+        _closeOverlay(activeOverlay);
+      }
+    });
+
+    // Communication Record Animation System
+    const _commTimers = new Map();
+
+    function startCommAnimation(overlay, msgs) {
+      stopCommAnimation(overlay); // clear any existing
+      const timers = [];
+      function runCycle() {
+        // Reset all: hidden + below
+        msgs.forEach(m => {
+          m.style.display = 'none';
+          m.style.opacity = '0';
+          m.style.transform = 'translateY(30px)';
+        });
+        // Show messages one by one — each new one appears at bottom, pushing previous up
+        msgs.forEach((msg, i) => {
+          const t = setTimeout(() => {
+            msg.style.display = 'block';
+            // Force reflow so transition triggers
+            void msg.offsetHeight;
+            msg.style.opacity = '1';
+            msg.style.transform = 'translateY(0)';
+          }, 1000 * (i + 1));
+          timers.push(t);
+        });
+        // After all shown, hold 3.5s then fade out all together
+        const totalShowTime = 1000 * msgs.length + 3500;
+        const fadeOutTimer = setTimeout(() => {
+          msgs.forEach(m => {
+            m.style.opacity = '0';
+            m.style.transform = 'translateY(-15px)';
+          });
+        }, totalShowTime);
+        timers.push(fadeOutTimer);
+        // After fade-out completes, hide all and restart
+        const restartTimer = setTimeout(() => {
+          runCycle();
+        }, totalShowTime + 1200);
+        timers.push(restartTimer);
+      }
+      runCycle();
+      _commTimers.set(overlay, timers);
+    }
+
+    function stopCommAnimation(overlay) {
+      const timers = _commTimers.get(overlay);
+      if (timers) {
+        timers.forEach(t => clearTimeout(t));
+        _commTimers.delete(overlay);
+      }
+      // Reset all messages
+      overlay.querySelectorAll('.comm-msg').forEach(m => {
+        m.style.display = 'none';
+        m.style.opacity = '0';
+        m.style.transform = 'translateY(30px)';
+      });
+    }
+
+    // ═══ View Over Tab Switching (Chuseok) ═══
+    function switchViewOverTab(btn, showId, hideId) {
+      // Switch panels
+      const showPanel = document.getElementById('viewoverPanel_' + showId);
+      const hidePanel = document.getElementById('viewoverPanel_' + hideId);
+      if (showPanel) showPanel.style.display = 'block';
+      if (hidePanel) {
+        hidePanel.style.display = 'none';
+        // Reset scroll position of hidden device
+        const mockup = hidePanel.querySelector('.device-mockup');
+        if (mockup) mockup.scrollTop = 0;
+      }
+      // Switch tab styles
+      const tabs = btn.parentElement.querySelectorAll('.viewover-tab');
+      tabs.forEach(t => {
+        if (t === btn) {
+          t.style.background = '#161616';
+          t.style.color = '#fff';
+        } else {
+          t.style.background = 'transparent';
+          t.style.color = '#161616';
+        }
+      });
+    }
+
+    // View Switching Logic (About <-> Work)
+    function openWorkGallery(e) {
+      if (e) e.preventDefault();
+
+      // Update Nav
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      const workLink = Array.from(document.querySelectorAll('.nav-link')).find(l => l.textContent.trim() === 'Work');
+      if (workLink) workLink.classList.add('active');
+
+      // Hide About
+      document.querySelectorAll('.about-view-wrapper').forEach(el => {
+        el.style.display = 'none';
+        el.style.opacity = '0';
+      });
+
+      // Show Work
+      document.querySelectorAll('.work-view-wrapper').forEach(el => {
+        el.style.display = '';
+        el.classList.remove('animated');
+        requestAnimationFrame(() => {
+          el.style.opacity = '1';
+          el.classList.add('animated');
+        });
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeWorkGallery(e) {
+      if (e) e.preventDefault();
+
+      // Update Nav
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      const aboutLink = Array.from(document.querySelectorAll('.nav-link')).find(l => l.textContent.trim() === 'About');
+      if (aboutLink) aboutLink.classList.add('active');
+
+      // Hide Work
+      document.querySelectorAll('.work-view-wrapper').forEach(el => {
+        el.style.display = 'none';
+        el.style.opacity = '0';
+      });
+
+      // Show About
+      document.querySelectorAll('.about-view-wrapper').forEach(el => {
+        el.style.display = '';
+        requestAnimationFrame(() => {
+          el.style.opacity = '1';
+        });
+      });
+
+      const heroBody = document.querySelector('.hero-body');
+      if (heroBody) {
+        heroBody.style.animationDelay = '0s';
+        heroBody.style.animationDuration = '0.5s';
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Theme toggle
+    function toggleTheme() {
+      var body = document.body;
+      var btn = document.getElementById('themeToggle');
+      body.classList.toggle('light');
+      if (body.classList.contains('light')) {
+        btn.textContent = 'Black';
+      } else {
+        btn.textContent = 'White';
+      }
+    }
+
+    // Dynamic Grid Align
+    function updateGridCols() {
+      const nohEl = document.querySelector('.word-clipper-noh');
+      if (nohEl) {
+        const width = nohEl.getBoundingClientRect().width;
+        document.documentElement.style.setProperty('--col-noh', `${width}px`);
+      }
+    }
+    window.addEventListener('resize', updateGridCols);
+    document.fonts.ready.then(updateGridCols);
+    setTimeout(updateGridCols, 100);
+
+    // Premium Glow Cursor - Fluid Trail & Depth
+    const numParticles = 20;
+    const particles = [];
+
+    for (let i = 0; i < numParticles; i++) {
+      const p = document.createElement('div');
+      p.className = 'cursor-glow-particle';
+      document.body.appendChild(p);
+      particles.push({
+        el: p,
+        x: window.innerWidth / 2,
+        y: window.innerHeight / 2
+      });
+    }
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let lastMouseX = mouseX;
+    let lastMouseY = mouseY;
+    let currentVelocity = 0;
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    const bodyRef = document.body;
+
+    function animateCursor() {
+      let targetX = mouseX;
+      let targetY = mouseY;
+
+      const time = Date.now();
+
+      // Calculate smoothed velocity
+      const dx = targetX - lastMouseX;
+      const dy = targetY - lastMouseY;
+      const rawVelocity = Math.sqrt(dx * dx + dy * dy);
+      currentVelocity += (rawVelocity - currentVelocity) * 0.08; // Smooth transition
+
+      lastMouseX = targetX;
+      lastMouseY = targetY;
+
+      // Speed factor from 0 to 1
+      const speedFactor = Math.min(currentVelocity / 40, 1);
+
+      // Depth expansion: expands up to 3.5x when moving fast
+      const expansion = 1 + (speedFactor * 2.5);
+
+      particles.forEach((p, index) => {
+        // Space out particles more when moving fast
+        const ease = 0.35 - (speedFactor * 0.2);
+        p.x += (targetX - p.x) * ease;
+        p.y += (targetY - p.y) * ease;
+
+        targetX = p.x;
+        targetY = p.y;
+
+        // Normalized index (0 = head, 1 = tail)
+        const iNorm = index / numParticles;
+        const baseScale = 1 - iNorm;
+
+        // Final scale (Idle shimmer removed)
+        const scale = baseScale * expansion;
+
+        // Irregular scatter (불규칙적 확산)
+        // Tail scatters more wildly than the head when moving fast
+        const scatterRange = speedFactor * 80 * Math.pow(iNorm, 0.5);
+        const noiseX = Math.sin(time * 0.005 + index * 2.1) * scatterRange;
+        const noiseY = Math.cos(time * 0.004 + index * 1.7) * scatterRange;
+
+        const finalX = p.x + noiseX;
+        const finalY = p.y + noiseY;
+
+        // Dynamic color: Blue Infrared Thermal effect (적외선 블루 계열)
+        // Head becomes bright Cyan, Tail becomes Deep Navy
+        const h = 221 - (speedFactor * (1 - iNorm) * 40) + (speedFactor * iNorm * 20); // 181 (Cyan) to 241 (Deep Blue)
+        const s = 74 + (speedFactor * 26); // up to 100%
+        const l = 62 + (speedFactor * (1 - iNorm) * 28) - (speedFactor * iNorm * 45); // 90 (Bright) to 17 (Dark)
+
+        p.el.style.transform = `translate(${finalX}px, ${finalY}px) translate(-50%, -50%) scale(${scale})`;
+        p.el.style.background = `hsl(${h}, ${s}%, ${l}%)`;
+
+        // Opacity calculation
+        const baseOpacity = bodyRef.classList.contains('light') ? 0.6 : 0.9;
+        p.el.style.opacity = baseScale * baseOpacity * (1 + speedFactor * 0.5);
+      });
+
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Scroll Interaction (Sticky header & Fade out)
+    document.addEventListener('DOMContentLoaded', () => {
+      const infoRow = document.getElementById('infoRow');
+      const nameContainer = document.querySelector('.hero-name-container');
+      const heroBody = document.querySelector('.hero-body');
+
+      let initialTop = infoRow.getBoundingClientRect().top + window.scrollY;
+
+      window.addEventListener('resize', () => {
+        if (!infoRow.classList.contains('fixed-header')) {
+          initialTop = infoRow.getBoundingClientRect().top + window.scrollY;
+        }
+      });
+
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+
+        if (scrollY >= initialTop - 40) {
+          infoRow.classList.add('fixed-header');
+        } else {
+          infoRow.classList.remove('fixed-header');
+        }
+
+        if (scrollY > 0) {
+          const nameOpacity = Math.max(1 - scrollY / 300, 0);
+          const bodyOpacity = Math.max(1 - scrollY / 400, 0);
+
+          nameContainer.style.opacity = nameOpacity;
+          nameContainer.style.transform = `translateY(${-scrollY * 0.4}px)`;
+
+          heroBody.style.opacity = bodyOpacity;
+          heroBody.style.transform = `translateY(${-scrollY * 0.2}px)`;
+        } else {
+          nameContainer.style.opacity = '';
+          nameContainer.style.transform = '';
+          heroBody.style.opacity = '';
+          heroBody.style.transform = '';
+        }
+      });
+    });
+
+    // About Section Toggle
+    window.toggleAbout = function (btn) {
+      const wrapper = btn.previousElementSibling;
+      const isOpen = wrapper.classList.contains('open');
+      if (isOpen) {
+        wrapper.classList.remove('open');
+        btn.innerHTML = 'View more';
+      } else {
+        wrapper.classList.add('open');
+        btn.innerHTML = 'View less';
+      }
+    };
+
+    // Skill bar animation on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const bars = entry.target.querySelectorAll('.skill-bar-fill');
+          if (entry.isIntersecting) {
+            bars.forEach(bar => {
+              bar.style.width = bar.getAttribute('data-width');
+            });
+          } else {
+            bars.forEach(bar => {
+              bar.style.width = '0%';
+            });
+          }
+        });
+      }, { threshold: 0.1 });
+
+      const skillsSection = document.getElementById('skills');
+      if (skillsSection) {
+        observer.observe(skillsSection);
+      }
+
+      const mockups = document.querySelectorAll('.device-mockup');
+      mockups.forEach(mockup => {
+        const scrollOverlay = mockup.previousElementSibling;
+        if (scrollOverlay && scrollOverlay.classList.contains('scroll-overlay')) {
+          mockup.addEventListener('scroll', () => {
+            if (mockup.scrollTop > 10 && scrollOverlay.style.opacity !== '0') {
+              scrollOverlay.style.opacity = '0';
+              setTimeout(() => { scrollOverlay.style.display = 'none'; }, 500);
+            }
+          });
+        }
+      });
+
+      // Gallery Filter Logic
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+      const grid = document.querySelector('.work-gallery-grid-3x4');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Remove active class from all
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // Add active class to clicked
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          // Process and re-append in original order
+          galleryItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            const shouldShow = (filterValue === 'all') || (itemCategory === filterValue);
+
+            if (shouldShow) {
+              grid.appendChild(item); // Re-inserts at end, preserving array order naturally
+              item.style.display = '';
+              item.style.animation = 'none';
+              void item.offsetWidth;
+              item.style.animation = '';
+            } else {
+              item.remove();
+            }
+          });
+        });
+      });
+
+      if (window.location.hash.startsWith('#work-detail-')) {
+        const id = window.location.hash.replace('#work-detail-', '');
+        openProjectDetail(id);
+      } else if (window.location.hash === '#work-detail') {
+        // Fallback for old hash
+        openProjectDetail();
+      }
+    });
+
+    // ═══ Artwork Carousel (Scroll-driven with trapping) ═══
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.project-source-section');
+
+      sections.forEach(section => {
+        const track = section.querySelector('.artwork-carousel-track');
+        if (!track) return;
+        const slides = track.querySelectorAll('.artwork-slide');
+        if (slides.length === 0) return;
+
+        let currentIndex = 0;
+        let lastWheelTime = 0;
+
+        function updateSlides(index) {
+          currentIndex = Math.max(0, Math.min(index, slides.length - 1));
+
+          // Calculate dynamic offset based on actual slide widths and gap
+          const slideWidth = slides[0].offsetWidth;
+          const gapStr = window.getComputedStyle(track).gap;
+          const gap = gapStr !== 'normal' ? parseFloat(gapStr) : 0;
+          const offset = -(currentIndex * (slideWidth + gap));
+
+          track.style.transform = `translateX(${offset}px)`;
+          slides.forEach((s, i) => {
+            const isActive = i === currentIndex;
+            s.classList.toggle('active', isActive);
+
+            // Handle video playback if the slide contains a video
+            const video = s.querySelector('video');
+            if (video) {
+              if (isActive) {
+                video.currentTime = 0; // Start from first frame or resume
+                video.play().catch(e => console.log('Auto-play prevented'));
+              } else {
+                video.pause();
+                video.currentTime = 0; // Pause at first frame
+              }
+            }
+          });
+        }
+
+        // Initial setup for videos (pause non-active ones)
+        updateSlides(0);
+
+        // Wheel-based: trap scroll inside section and advance slides one by one
+        const scrollContainer = section.closest('.project-detail-container');
+        if (scrollContainer) {
+          scrollContainer.addEventListener('wheel', (e) => {
+            const rect = section.getBoundingClientRect();
+            const viewH = window.innerHeight;
+            // Start swiping ONLY when scrolled to the absolute bottom of the section (page end)
+            const sectionVisible = Math.abs(rect.bottom - viewH) < 5;
+
+            if (sectionVisible) {
+              const now = Date.now();
+              // Throttle: one slide per 400ms
+              if (now - lastWheelTime < 400) {
+                e.preventDefault();
+                return;
+              }
+
+              const goingDown = e.deltaY > 0;
+              const goingUp = e.deltaY < 0;
+
+              // If scrolling down and not at last slide, trap
+              if (goingDown && currentIndex < slides.length - 1) {
+                e.preventDefault();
+                lastWheelTime = now;
+                updateSlides(currentIndex + 1);
+                return;
+              }
+              // If scrolling up and not at first slide, trap
+              if (goingUp && currentIndex > 0) {
+                e.preventDefault();
+                lastWheelTime = now;
+                updateSlides(currentIndex - 1);
+                return;
+              }
+              // At boundary (first or last slide) — let page scroll naturally
+            }
+          }, { passive: false });
+        }
+
+        updateSlides(0);
+      });
+    });
+    // ═══ Contents BX Pagination ═══
+    window.changeBxPage = function (pageNum) {
+      document.querySelectorAll('.contents-bx-grid').forEach(grid => grid.classList.remove('active'));
+      document.querySelectorAll('.bx-page-link').forEach(link => link.classList.remove('active'));
+
+      const targetGrid = document.getElementById('bx-page-' + pageNum);
+      if (targetGrid) targetGrid.classList.add('active');
+
+      const targetLinks = document.querySelectorAll(`.bx-page-link[onclick="changeBxPage(${pageNum})"]`);
+      targetLinks.forEach(link => link.classList.add('active'));
+
+      // Scroll to top of the project detail overlay
+      const container = document.querySelector('#projectDetailOverlay_03 .project-detail-container');
+      if (container) {
+        container.scrollTop = 0;
+      }
+    };
+  </script>
+</body>
+
+</html>
